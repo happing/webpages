@@ -1,0 +1,327 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		a{text-decoration: none;}
+		.lll{
+			width: 1349px;
+			margin: 0 auto;
+		}
+		/*nav{
+			width:1349px ;
+			height:149px;
+			margin: 0 auto;
+		}*/
+		.navTop{
+			width:1349px ;
+			height:29px ;
+			background-color:#f8f8f8 ;
+		}
+		.navTop ul li{
+			width: 62px;
+			font-size: 12px;
+			list-style: none;
+			float: left;
+			text-align: center;
+			line-height: 29px;
+		}
+		.navTop ul li:hover{background-color: #ffffff;}
+		.navTop ul:first-child{
+			float: left;
+			padding-left: 179px;}
+		.navTop ul:first-child li{border-right:1px solid #ececec;}
+		.navTop ul:first-child li:first-child{width: 83px;}
+		.navTop ul:nth-child(2){
+			float: right;
+			margin-right: 179px;
+		}
+		.logo{
+			height: 120px;
+			background:url(./images/07.png) no-repeat 179px;
+		}	
+		header{
+			width: 1349px;
+			height: 662px;
+		}
+		.headerNav01{
+			height: 45px;
+			background-color: #333333;
+		}
+		.headerNav01 ul{
+			width: 990px;
+			margin-left: 179px;
+			display: flex;
+			justify-content:space-around;
+		}
+		.headerNav01 li{
+			list-style: none;
+			line-height: 45px;
+		}
+		.headerNav01 li a{color: white;}
+		.headerNav02{
+			height: 35px;
+			background-color: #f7f7f7;
+		}
+		.headerNav02 ul{margin-left: 179px;}
+		.headerNav02 li{
+			font-size: 12px;
+			list-style: none;
+			float: left;
+			margin-top:10px;
+			padding:0 10px;
+			border-right: 1px solid #dcdcdc;
+		}
+		.headerNav02 li:nth-child(1){border-right: none;}
+		.headerNav02 li:nth-child(10){border-right: none;}
+		.headerNav02 li:nth-last-child(2) a{
+			color: red;
+			font-weight: bold;
+		}
+		.headerNav02 input{
+			float: right;
+			border-radius: 10px;
+			margin-top: 5px;
+			width: 230px;
+			height: 20px;
+			display: block;
+			background:url(./images/太平洋家居_15.png) no-repeat 2px;
+		}
+		.ad{
+			width: 100%;
+			height:476px;
+			background:url(./images/太平洋家居_18.png) no-repeat ;
+			margin-left: 179px;
+		}
+		header .add{margin-left: 179px;}
+		header .add span{
+			display: block;
+			width: 72px;
+			height: 90px;
+			color: white;
+			background:url(./images/太平洋家居_33.png) no-repeat 30px 60px;
+			background-color: black;
+			float: left;
+			margin-top: 16px;
+		}
+		header .add img{
+			margin: 16px 12px 0 0;
+			float: left;
+		}
+		.jinxuan{
+			width: 991px;
+			/*height: 510px;*/
+			margin-left: 179px;
+			overflow: hidden;
+		}
+		.jinxuan .jinxuanLeft{
+			float: left;
+		}
+		.jinxuan .jinxuanRight{
+			float: right;
+		}
+		.jinxuan .jinxuanLeft div:first-child{
+			width: 652px;
+			height: 72px;
+		}
+		.jinxuan .jinxuanLeft div:first-child ul{
+			height: 40px;
+			margin-top: 50px;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.jinxuan .jinxuanLeft div:first-child ul li{
+			width: 163px;
+			text-align: center;
+			line-height: 38px;
+			list-style: none;
+			font-size: 18px;
+			float: left;
+			border-bottom: 1px solid #000000;
+		}
+		.jinxuan .jinxuanLeft div:first-child ul li a{
+			color:#000000;
+		}
+		.jinxuan .jinxuanLeft div:first-child ul li:hover{
+			border-right: 1px solid #000000;
+			border-top:3px solid #000000;
+			border-left: 1px solid #000000;
+			border-bottom: none;
+		}
+		.jinxuan .jinxuanLeft div:nth-child(2){
+			display: flex;
+			justify-content: space-between;
+			overflow: hidden;
+		}
+		.jinxuan .jinxuanLeft div:nth-child(2) figure{
+			text-align: center;
+			font-size: 14px;
+			color: #000000;
+			float: left;
+		}
+		.jinxuan .jinxuanLeft div:nth-child(3) ul{
+			display: block;
+			margin-right: 50px;
+			margin-top: 25px;
+			float: left;
+		}
+		.jinxuan .jinxuanLeft div:nth-child(3) ul li{
+			margin-bottom: 20px;
+			list-style-type: square;
+			list-style-position: inside;
+		}
+		.jinxuanLeft div:nth-child(3)  ul li a{
+			color: #000000;
+		}
+		.jinxuanLeft p{
+			width: 652px;
+			height: 32px;
+			display: inline-block;
+			background-color: #f7f7f7;
+		}
+		.jinxuanLeft p span{
+			margin-left: 5px;
+			font-size: 10px;
+			line-height: 32px;
+		}
+		.jinxuanRight{
+			width: 311px;
+		}
+		.jinxuanRight div:first-child{
+			margin-top: 50px;
+		}
+
+
+
+	</style>
+</head>
+<body>
+<div class="lll">
+	<nav>
+		<div class="navTop">
+				<ul>
+					<li><a href="">太平洋网络:</a></li>
+					<li><a href="">电脑网</a></li>
+					<li><a href="">汽车网</a></li>
+					<li><a href="">游戏网</a></li>
+					<li><a href="">时尚网</a></li>
+					<li><a href="">亲子网</a></li>
+					<li><a href="">家居网</a></li>
+				</ul>
+				<ul>
+					<li><a href="">登录</a></li>
+					<li><a href="">注册</a></li>
+					<li><a href="">我是设计师</a></li>
+				</ul>
+		</div>
+		<div class="logo"></div>
+	</nav>
+	<header>
+		<div class="headerNav01">
+			<ul>
+				<li><a href="">首页</a></li>
+				<li><a href="">案例参考</a></li>
+				<li><a href="">装修设计</a></li>
+				<li><a href="">装修施工</a></li>
+				<li><a href="">装修搭配</a></li>
+				<li><a href="">产品大全</a></li>
+				<li><a href="">评测</a></li>
+				<li><a href="">论坛</a></li>
+				<li><a href="">活动</a></li>
+				<li><a href="">专题</a></li>
+				<li><a href="">更多</a></li>
+			</ul>	
+		</div>
+		<div class="headerNav02">
+			<ul>
+				<li><a href="">产品分类:</a></li>
+				<li><a href="">卫浴</a></li>
+				<li><a href="">涂料</a></li>
+				<li><a href="">瓷砖</a></li>
+				<li><a href="">地板</a></li>
+				<li><a href="">家电</a></li>
+				<li><a href="">家具</a></li>
+				<li><a href="">家饰</a></li>
+				<li><a href="">2016时尚设计盛典</a></li>
+				<li><a href="">立邦涂装攻略</a></li>
+			</ul>
+			<input type="text" name="">
+		</div>
+		<div class="ad"></div>
+		<div class="add">
+			<span>装修流程</span>
+			<a href=""><img src="./images/太平洋家居_30.png"></a>
+			<a href=""><img src="./images/太平洋家居_30.png"></a>
+			<a href=""><img src="./images/太平洋家居_30.png"></a>
+			<a href=""><img src="./images/太平洋家居_30.png"></a>
+			<a href=""><img src="./images/太平洋家居_30.png"></a>
+			<a href=""><img src="./images/太平洋家居_30.png"></a>
+			<a href=""><img src="./images/太平洋家居_30.png"></a>
+			<a href=""><img src="./images/太平洋家居_30.png"></a>
+			<a href=""><img src="./images/太平洋家居_30.png"></a>
+		</div>	
+	</header>
+	<div class="jinxuan">
+		<div class="jinxuanLeft">
+			<div>
+				<ul>
+					<li><a href="">咨询精选</a></li>
+					<li><a href="">优选产品</a></li>
+					<li><a href="">今日活动</a></li>
+					<li><a href="">人物访谈</a></li>
+				</ul>
+			</div>
+			<div>
+				<figure>
+					<img src="./images/41.png">
+					<figcaption>美女设计理想新作</figcaption>
+				</figure>
+				<figure>
+					<img src="./images/41.png">
+					<figcaption>美女设计理想新作</figcaption>
+				</figure>
+				<figure>
+					<img src="./images/41.png">
+					<figcaption>美女设计理想新作</figcaption>
+				</figure>
+			</div>
+			<div>
+				<ul>
+					<li><a href="">生材质之美 充实东方古典心是一养</a></li>
+					<li><a href="">生材质之美 充实东方古典心是一</a></li>
+					<li><a href="">生材质之美 充实东方古典心是一</a></li>
+				</ul>
+				<ul>
+					<li><a href="">生材质之美 充实东方古典心是一</a></li>
+					<li><a href="">生材质之美 充实东方古典心是一</a></li>
+					<li><a href="">生材质之美 充实东方古典心是一</a></li>
+				</ul>
+			</div>
+			<p>
+				<span><a href="">当艺术触碰科技将擦出怎样的火花</a></span>
+				<span><a href="">当艺术触出怎样的火花</a></span>
+				<span><a href="">当艺术触碰科技将的火花</a></span>
+			</p>
+		</div>
+		<div class="jinxuanRight">
+			<div>
+				<ul>
+					<li><a href="">墙面进化论</a></li>
+					<li><a href="">墙面进化论</a></li>
+					<li><a href="">墙面进化论</a></li>
+				</ul>
+			</div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

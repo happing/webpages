@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		a{
+			text-decoration:none;
+			color:#999999;
+		}
+		ul{list-style: none;}
+		.fl{float: left;}
+		.rl{float: right;}
+		.pro{
+			width: 1349px;
+			height: 2285px;
+			margin: 0 auto;
+		}
+		.nav{
+			width: 1349px;
+			height:57px; 
+			background-color:#232323;
+		}
+		.nav .nav_log {
+			height: 56px;
+			background: url(./images/01.png) no-repeat;
+		}
+		.nav .nav_log ul{
+			background: url(./images/10.png) no-repeat 234px;
+			margin-left: 177px;
+		}
+		.nav .nav_log ul li{
+			display: inline;
+			height: 56px;
+			color: #e7e7e7;
+			line-height: 56px;
+			padding-right:60px; 
+		}
+		.nav .nav_log span{
+			padding-left:30px;
+			color: #e7e7e7;
+		}
+		.nav .nav_search{
+			width: 819px;
+			background: url(./images/04.png) no-repeat 680px 13px;
+		}
+		.nav .nav_search input{
+			width: 280px;
+			/*矩阵变换*/
+			transform: skewX(-30deg);             	
+			height:36px;
+			margin: 10px 0 0 360px;
+			background-color: #D0CFCB;	
+		}
+		.nav .nav_search .nav_search01{
+			width: 700px;
+		}
+		.nav .nav_search .nav_search01 img{
+			position: absolute;top: 20px;left: 1210px;
+			z-index: 1;
+		}
+		.nav .nav_search .nav_search02{
+			float: right;
+			margin: -30px 30px 0 0;
+		}
+		.nav .nav_search .nav_search02 span{
+			color: #e7e7e7;
+			display: inline;
+		}
+		.header{
+			height:477px ;
+			background: url(./images/16.png) no-repeat 291px;
+			background-color:#cecdc9;
+		}
+		.zhongjian{
+			height: 38px;
+			font-color:#333333;
+		}
+		.zhongjian span{
+			display: block;
+			width: 150px;
+			height: 38px;
+			padding-left: 550px;
+			line-height:38px;
+			float: left;
+			font-size: 12px;
+			font-color: #333333;
+		}
+		.zhongjian .zhongjian_l{
+			width: 100px;
+			height: 38px;
+			margin-left: 40px;
+		}
+		.zhongjian img{
+			float: left;
+			padding: 12px 21px 0 0px;
+		}
+		.boddy{
+			height:1400px;
+			background-color:#ededed;
+		}
+		  .boddy .boddy_l figure a img{
+			float: left;
+			margin: 0 25px 16px 0; 
+		}
+		.boddy .boddy_l figure a img:hover{
+			 /*缩放*/
+			transform: scale(1.1);
+			/*平移*/
+			/*transform:translate(40px,40px);*/
+			/*旋转*/
+			/*transform:rotate(15deg);*/
+			/*扭曲*/
+          /* transform:skew(-5deg,-5deg);*/
+		}
+		.pro .boddy .boddy_l{
+			padding-left: 140px;
+			margin-top: 10px;
+		}
+		.foot .foot_1{
+			width:270px; 
+			height:260px;
+			margin-left: 135px;
+		}
+		.foot .foot_1 ul{
+			margin: 66px 0  0 115px;
+		}
+		.foot ul li{
+			padding: 10px 0;
+		}
+		.foot .foot_2{
+			width: 250px;
+			height: 260px;
+		}
+		.foot .foot_2 ul{
+			margin: 66px 50px 0 0;
+		}
+		.foot .foot_2 ul li{
+			text-align: right;
+		}
+		.foot .foot_3{
+			width: 300px;
+			height: 260px;
+			padding-top: 68px;
+			background: url(./images/43.png) no-repeat 50px 110px;
+		}
+		.foot .foot_3 a{
+			width:45px; 
+			height: 20px;
+			line-height: 20px;
+			display: inline-block;
+			margin: 20px 10px 10px 13px;
+			border:1px solid #F2A3AF;
+			border-radius:5px;
+			color:#F2A3AF;
+		}
+		.foot .foot_3 .p01{
+			padding-top: 10px;
+			padding-left: 30px;
+		}
+		.foot .foot_3 .p02{
+			padding-left: 70px;
+			padding-top: 10px;
+			color: #F2A3AF;
+		}
+
+		.foot .foot_4{
+			width: 200px;
+			height: 260px;
+		}
+		.foot .foot_4 ul{
+			margin-top:66px;
+		}
+		.foot .foot_4 ul li{
+			text-align: center;
+		}
+		.foot .foot_5 figure{
+			margin-left: 132px;
+			float: left;
+			font-size: 8px;
+		}
+		.foot .foot_5 .foot_501{
+			display: inline;
+			float: left;
+			padding-left: 250px;
+			padding-top: 2px;
+		}
+		.foot .foot_5 .foot_502{
+			display: inline;
+			float: left;
+			padding-left: 10px;
+			padding-top: 2px;
+		}	
+	</style>
+</head>
+<body>
+	<div class="pro">
+		<div class="nav">
+			<div class="nav_log fl"> 
+				<ul>
+					<li><a href="#">男</a></li>
+					<li><a href="#">女</a></li>
+					<li><a href="#">儿童</a></li>
+					<span><a href="#">跑鞋顾问</a></span>
+				</ul>
+			</div>
+			
+			<div class="nav_search fl">
+				<div class="nav_search01">
+				     <img src="./images/07.png">
+					<input type="search" name="" placeholder="查找关键字" autofocus="">
+				</div>
+				<div class="nav_search02">
+					<span><a href="#">查找门店</a></span>
+				</div>
+			</div>
+		</div>
+		<div class="header"></div>
+		<div class="zhongjian">
+			<span>关注NewBalance中国</span>
+			<div class="zhongjian_l fl">
+				<img src="./images/19.png">
+				<img src="./images/21.png">
+			</div>
+			
+		</div>
+
+		<div class="boddy">
+			<div class="boddy_l">
+				<div>
+					<figure>
+						<a href="#"><img src="./images/26.png"></a>
+					</figure>
+				</div>
+				<div>
+					<figure>
+						<a href="#"><img src="./images/28.png"></a>
+					</figure>
+				</div>
+				<div>
+					<figure>
+						<a href="#"><img src="./images/32.png"></a>
+					</figure>
+				</div>
+				<div>
+					<figure>
+						<a href="#"><img src="./images/33.png"></a>
+					</figure>
+				</div>
+				<div>
+					<figure>
+						<a href="#"><img src="./images/36.png"></a>
+					</figure>
+				</div>
+				<div>
+					<figure>
+						<a href="#"><img src="./images/37.png"></a>
+					</figure>
+				</div>
+				<div>
+					<figure>
+						<a href="#"><img src="./images/40.png"></a>
+					</figure>
+				</div>
+			</div>	
+		</div>
+		<div class="foot"> 
+			<div class="foot_1 fl">
+				<ul>
+					<li><a href="#">品牌热线</a></li>
+					<li><a href="#">800-820-2887(固话)</a></li>
+					<li><a href="#">400-890-2877(固话)</a></li>
+				</ul>
+			</div>
+			<div class="foot_2 fl">
+				<ul>
+					<li><a href="#">官方在线购买渠道</a></li>
+					<li><a href="#">天猫旗舰店</a></li>
+					<li><a href="#">京东旗舰店</a></li>
+					<li><a href="#">品牌防假</a></li>
+				</ul>
+			</div>
+			<div class="foot_3 fl">
+				
+					<p class="p01">NewBalance天猫/京东售后热线</p>
+					<p class="p02"><b>021 3596 6191 </b>转</p>
+					<a href="#">1024</a>
+					<a href="#">1024</a>
+					<a href="#">1024</a>
+					<a href="#">1024</a>
+					<a href="#">1024</a>
+					<a href="#">1024</a>
+					<a href="#">1024</a>
+					<a href="#">1024</a>
+			</div>
+			<div class="foot_4 fl">
+				<ul>
+					<li><a href="#">联系我们</a></li>
+					<li><a href="#">加入我们</a></li>
+				</ul>
+			</div>
+			<div>
+			<hr style="border:2px solid #545454 ;width: 100%" >
+			</div>
+			<div class="foot_5">
+			     <span class="foot_501">2015 @ NewBalance</span>
+				<figure>
+						<img src="./images/47.png">
+						<figcaption>上海工商</figcaption>
+				</figure>
+				<span class="foot_502">沪ICP备10207056号</span>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

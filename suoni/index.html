@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		/*头部导航*/
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		a{
+			text-decoration: none;
+		}
+		li{
+			list-style: none;
+		}
+		.llll{
+			width: 1349px;
+			/*height: 2260px;*/
+			border: 1px solid black;
+			margin: 0 auto;
+		}
+		header{
+			width:1349px;
+			height: 104px;
+			margin: 0 auto;
+			background-color:#000000; 
+			overflow: hidden;
+		}
+
+		.headerLeft{
+			width:860px;
+			float: left;
+		}
+		.headerLeft .logo{
+			width: 102px;
+			height:20px; 
+			padding: 32px 0 0 210px;
+			background:url(./images/03.png) no-repeat 210px 32px;
+		}
+		.headerLeft .headline ul{
+			overflow: hidden;
+			margin-left: 210px;
+			overflow: hidden;
+		}
+		.headerLeft .headline ul li{
+			height: 53px
+			color: #ffffff;
+			font-size: 14px;
+			/*list-style: none;*/
+			line-height: 53px;
+			padding-right:40px;
+			float: left;
+		}
+		.headerRight{
+			width: 300px;
+			height: 104px;
+			float: left;
+		}
+		.headerRight .elogo span{
+			line-height:52px;
+			font-size: 10px;
+			margin-right:25px;
+			color: #626262;
+		} 
+		.headerRight .elogo span.elogoLast{
+			font-weight: bolder;
+			font-size: 14px;
+			color: #f3f3f3;
+		}
+		.headerRight .reach span{
+			width:200px;
+			height:40px; 
+			border: 2px solid #424242;
+			margin-left: 80px;
+			display: inline-block;
+			background: url(./images/07.png) no-repeat 175px 12px;
+		}
+		/*广告图片*/
+		.ad{
+			width: 1349px;
+			height: 521px;
+			background: url(./images/14.png) no-repeat;
+		}
+		/*	<!-- 空白 -->*/
+		.space{
+			width: 1349px;
+			height: 85px;
+		}
+		.space p{
+			width: 88px;
+			height: 20px;
+			font-size: 20px;
+			padding: 40px 0 0 210px;
+			display: inline-block;
+		}
+
+		/*上面的广告图片*/
+		.addpoto{
+			width: 1349px;
+			margin: 0 auto;
+		}
+		.addtell{
+			margin-left: 197px;
+			overflow: hidden;
+		}
+		.addpoto .addtell div{
+			width: 231px;
+			height: 98px;
+			float: left;
+			margin-right:6px;
+			background-color: #eff0f1;
+		}
+
+		.addpoto .addtell ul{
+			width: 230px;
+			height: 70px;
+			margin: 18px 0 0 15px;
+			background: url(./images/34.png) no-repeat 184px 2px;
+		}
+		.addpoto .addtell ul li a{
+			color:#595959;
+		}
+			/*中间的广告组图*/
+
+		.products{
+			width:1202px ;
+			height: 592px;
+			background-color: #f0f1f3;
+			margin: 0 auto;
+			margin-top:56px;
+		}
+		.products h3{
+			display: inline-block;
+			margin-top: 40px;
+			margin-right: 128px;
+			margin-left: 125px;
+		}
+		.products h3 a{
+			color: #303030;
+		}
+		.products .product{
+			width: 960px;
+			height:454px ;
+			margin-left: 125px;
+			margin-top:23px; 
+		}
+		.product .product_1{
+			width: 320px;
+			height: 84px;
+			float: left;
+		}
+		.product .product_1>a:first-child{
+			display: inline-block;
+			height: 84px;
+		}
+		.product span{
+			width:208px;  
+			height:84px;
+			display: inline-block;
+           float: right;
+		}
+		.product .product_1>span>a:first-child{
+
+			display: inline-block;
+			width:75px;
+			height:20px;
+			color: #f0f1f2;
+			background-color:#d0d1d3;
+			margin:1px 0 0 17px;
+		}
+		.product .product_1 span p a{
+			display: inline-block;
+			width: 195px;
+			color: #595959;
+		}
+		.product .product_1 .last{
+			line-height: 84px;
+		}
+
+
+		.branch{
+			width: 950px;
+			height:188px;
+			margin: 0 auto;
+		}
+		.branch .branchAd{
+			width: 950px;
+			height:76px;
+		}
+		.branchAd p{
+			display: inline-block;
+			width:170px;
+			line-height: 46px;
+			margin-top:30px ;
+		}
+		.branchAd p:last-child{
+			margin-left: 486px;
+		}
+
+		footer{
+			width: 1349px;
+			margin:  0 auto;
+			margin-top: 40px;
+			background-color:#1f2024;
+		}
+		.ftop ul li a{
+			color: #ffffff;
+		}
+		.ftop{
+			width: 950px;
+			height: 292px;
+			margin-left: 204px;
+		
+			border-bottom: 1px solid #333438;
+		}
+		.ftop ul{
+			margin-right: 90px;
+			margin-top: 20px;
+			float: left;
+		}
+		.ftop ul li{
+			padding: 5px 0;
+		}
+		.ftop ul:first-child{
+			padding-right:100px;
+		}
+		.ftop ul:last-child{
+			padding-right: 0;
+		}
+		.ftop ul h4{
+			padding: 10px 0;
+		}
+
+
+		.fboom{
+			height: 108px;
+			background: url(./images/92.png) no-repeat 987px 44px;
+		}
+		.fboom img{
+			position: absolute;
+			left: 280px;
+		}
+		.fboom01 {
+			width: 420px;
+			height: 24px;	
+			margin-left: 310px;
+			margin-top: 30px;
+		}
+		.fboom01 ul li{
+			margin-right: 20px;
+			float: left;		
+		}
+		.fboom02{
+			width: 636px;
+			height: 24px;
+			margin-left: 208px;
+			margin-top: 10px;	
+		}
+		.fboom02 ul li{
+			margin-right: 20px;
+			float: left;		
+		}
+
+	</style>
+</head>
+<body>
+<div class="llll">
+	<header>
+		<div class="headerLeft">
+			<div class="logo"></div>
+			<div class="headline">
+				<ul>
+					<li><a href="">索尼产品</a></li>
+					<li><a href="">服务与支持</a></li>
+					<li><a href="">企业社会责任</a></li>
+					<li><a href="">人才招聘</a></li>
+					<li><a href="">新闻中心</a></li>
+					<li class="last"><a href="">关于索尼</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="headerRight">
+			<div class="elogo">
+				<span><a href="">About Sony Group</a></span>
+				<span><a href="">Global Home</a></span>
+				<span class="elogoLast"><a href=""></a>索尼中国</span>
+			</div>
+			<div class="reach">
+				<span></span>
+			</div>
+		</div>
+	</header>
+
+	<div class="ad"></div>
+	<!-- 空白 -->
+
+	<div class="space">
+		<p>最新推荐</p>
+	</div>
+
+	<!-- 上面的广告图片 -->
+	<div class="addpoto">
+		<div>
+			<a href=""><img src="./images/16.png"></a>
+			<a href=""><img src="./images/18.png"></a>
+			<a href=""><img src="./images/18.png"></a>
+			<a href=""><img src="./images/18.png"></a>
+			<a href=""><img src="./images/18.png"></a>
+			<a href=""><img src="images/26.png"></a>
+		</div>
+		<div class="addtell">
+			<div>
+				<ul>
+					<li><a href="">dffadsg</a></li>
+					<li><a href="">dasdg</a></li>
+					<li><a href="">gdsagadsg</a></li>
+				</ul>
+			</div>
+			<div>
+				<ul>
+					<li><a href="">gdsgds</a></li>
+					<li><a href="">gsag</a></li>
+					<li><a href="">gasg</a></li>
+				</ul>
+			</div>
+			<div>
+				<ul>
+					<li><a href="">dsaf</a></li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+				</ul>
+			</div>
+			<div>
+				<ul>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- 中间的广告组图 -->
+	<div class="products">
+		<div>
+			<h3><a href="">新闻动态</a></h4>
+			<h3><a href="">站内更新</a></h4>
+			<h3><a href="">重要通知</a></h4>
+		</div>
+		<div class="product">
+			<div class="product_1">
+				<a href=""><img src="./images/49.png"></a>
+				<span>
+				<a href="">2016.7.14</a> 
+				<p><a href="">&nbsp上海深圳岗位更新</a></p>
+				</span>
+			</div>
+			<div class="product_1">
+				<a href=""><img src="./images/49.png"></a>
+				<span>
+				<a href="">2016.7.14</a> 
+				<p><a href="">&nbsp上海深圳岗位更新</a></p>
+				</span>
+			</div>
+			<div class="product_1">
+				<a href=""><img src="./images/49.png"></a>
+				<span>
+				<a href="">2016.7.14</a> 
+				<p><a href="">&nbsp上海深圳岗位更新</a></p>
+				</span>
+			</div>
+
+			<div class="product_1">
+				<a href=""><img src="./images/49.png"></a>
+				<span>
+				<a href="">2016.7.14</a> 
+				<p><a href="">&nbsp上海深圳岗位更新</a></p>
+				</span>
+			</div>
+			<div class="product_1">
+				<a href=""><img src="./images/49.png"></a>
+				<span>
+				<a href="">2016.7.14</a> 
+				<p><a href="">&nbsp上海深圳岗位更新</a></p>
+				</span>
+			</div>
+			<div class="product_1">
+				<a href=""><img src="./images/49.png"></a>
+				<span>
+				<a href="">2016.7.14</a> 
+				<p><a href="">&nbsp上海深圳岗位更新</a></p>
+				</span>
+			</div>
+
+
+			<div class="product_1">
+				<a href=""><img src="./images/49.png"></a>
+				<span>
+				<a href="">2016.7.14</a> 
+				<p><a href="">&nbsp上海深圳岗位更新</a></p>
+				</span>
+			</div>
+			<div class="product_1">
+				<a href=""><img src="./images/49.png"></a>
+				<span>
+				<a href="">2016.7.14</a> 
+			<p><a href="">&nbsp上海深圳岗位更新</a></p>
+				</span>
+			</div>
+			<div class="product_1">
+				<a href=""><img src="./images/49.png"></a>
+				<span>
+				<a href="">2016.7.14</a> 
+				<p><a href="">&nbsp上海深圳岗位更新</a></p>
+				</span>
+			</div>
+
+			<div class="product_1">
+				<a href=""><img src="./images/49.png"></a>
+				<span>
+				<a href="">2016.7.14</a> 
+				<p><a href="">&nbsp上海深圳岗位更新</a></p>
+				</span>
+			</div>
+
+			<div class="product_1">
+				<a href=""><img src="./images/49.png"></a>
+				<span>
+				<a href="">2016.7.14</a> 
+				<p><a href="">&nbsp上海深圳岗位更新</a></p>
+				</span>
+			</div>
+
+			<div class="product_1">
+				<a href=""><img src="./images/49.png"></a>
+			    <span>
+				<a href="">2016.7.14</a> 
+				<p><a href="">&nbsp上海深圳岗位更新</a></p>
+				</span>
+			</div>
+
+			<div class="product_1">
+				<a href=""><img src="./images/49.png"></a>
+				<span>
+				<a href="">2016.7.14</a> 
+				<p><a href="">&nbsp上海深圳岗位更新</a></p>
+				</span>
+			</div>
+
+			<div class="product_1">
+				<a href=""><img src="./images/49.png"></a>
+				<span>
+				<a href="">2016.7.14</a> 
+				<p><a href="">&nbsp上海深圳岗位更新</a></p>
+				</span>
+			</div>
+
+			<div class="product_1">
+				<a href=""><img src="./images/49.png"></a>
+				<span>
+				<a href="">2016.7.14</a> 
+				<p><a href="">&nbsp上海深圳岗位更新</a></p>
+				</span>
+			</div>
+
+			<div class="product_1">
+				<a href="" class="last">新闻中心</a>
+				<a href=""></a><img src="./images/34.png">
+			</div>
+		</div>		
+	</div>
+
+	<!-- 底下的商标组图 -->
+	<div class="branch">
+		<div class="branchAd">
+			<p>集团旗下公司</p>
+			<p>专题网站</p>
+		</div>
+		<div class="branchPho">
+			<a href=""><img src="./images/72.png"></a>
+			<a href=""><img src="./images/74.png"></a>
+			<a href=""><img src="./images/76.png"></a>
+			<a href=""><img src="./images/77.png"></a>
+			<a href=""><img src="./images/79.png"></a>
+			<a href=""><img src="./images/81.png"></a>
+		</div>
+	</div>
+
+	<!-- 脚注 -->
+	<footer>
+		<div class="ftop">
+			<ul>
+				<h4><a href="">你周围的经销商</a></h4>
+				<li><a href="">就近门店查询</a></li>
+			</ul>
+			<ul>
+				<h4><a href="">商品购买</a></h4>
+				<li><a href="">fasgfdg</a></li>
+				<li><a href="">gdfgsdf</a></li>
+				<li><a href="">hgfdh</a></li>
+				<li><a href="">hgfh</a></li>
+				<li><a href="">fghdf</a></li>
+			</ul>
+			<ul>
+				<h4><a href="">商品购买</a></h4>
+				<li><a href="">dfh</a></li>
+				<li><a href="">dhfg</a></li>
+				<li><a href="">fdh</a></li>
+				<li><a href="">fd</a></li>
+				<li><a href="">srthrth</a></li>
+			</ul><ul>
+				<h4><a href="">商品购买</a></h4>
+				<li><a href="">trhety</a></li>
+				<li><a href="">ytjyt</a></li>
+				<li><a href="">ytjrt</a></li>
+				<li><a href="">tjrt</a></li>
+				<li><a href="">tyrjt</a></li>
+			</ul>
+			<ul>
+				<h4><a href="">商品购买</a></h4>
+				<li><a href="">tyrj</a></li>
+				<li><a href="">tyrj</a></li>
+				<li><a href="">tyjr</a></li>
+				<li><a href="">tyj</a></li>
+				<li><a href="">tyjr</a></li>
+			</ul>
+		</div>
+		<div class="fboom">
+			<a href=""><img src="./images/03.png"></a>
+			<div class="fboom01">
+				<ul>
+					<li><a href="">2011-2016</a></li>
+					<li><a href="">dsfs</a></li>
+					<li><a href="">gfsdger</a></li>
+				</ul>
+			</div>
+			<div class="fboom02">
+				<ul>
+					<li><a href="">联系我们</a></li>
+					<li><a href="">网站所有者信息</a></li>
+					<li><a href="">您浏览本网页将被监控</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	a{
+		text-decoration: none;
+		color:#ffffff;
+	}
+	li{
+		list-style: none;
+	
+	}
+	img{
+		border: none;
+	}
+	.four{
+		width: 1349px;
+		margin: 0 auto;
+	}
+	/*导航*/
+	nav{
+		height: 38px;
+		background-color: #000000;
+	}
+	nav ul{
+		padding-top: 12px;
+		overflow: hidden;
+	}
+	nav ul li{
+		font-size: ;
+		text-align: center;
+		border-right:1px solid #ffffff;
+		line-height: 14px;
+		font-size: 15zpx;
+		padding: 0 12px 0 12px;
+		float: left;
+	}
+	nav .last{
+		border: none;
+	}
+	nav .navL{
+		margin-left: 75px;
+		float: left;
+	}
+	nav .navR{
+		padding-right: 95px;
+		background: url(./images/03.png) no-repeat 176px;
+		float: right;
+	}
+	/*头部信息*/
+	header{
+		height: 580px;
+	}
+	.lgsh{
+		width:1200px ;
+		height:68px ;
+		margin: 0 auto;
+		padding: 30px 0 0 75px;
+		background: url(./images/11.png) no-repeat 45px 30px;
+	}
+	.lgsh h3{
+		
+		    width: 100px;
+		    line-height: 38px;
+		    margin-left: 80px;
+		    text-align: center;
+		    display: block;
+		    float: left;
+	}
+	.lgsh div{
+		margin-left: 355px;
+	}
+	input{
+		display: inline-block;
+	}
+	.lgsh div input:first-child{
+		width:636px ;
+		height:36px ;
+		border: 2px solid red;
+		border-right: none;
+	}
+	.lgsh div input:last-child{
+		width: 145px;
+		height: 38px;
+		font-size: 20px;
+		background-color: red;
+	}
+	.lgn{
+		overflow: hidden;
+	}
+	.lgn ul{
+		width: 950px;
+		padding-left: 305px;
+	}
+	.lgn ul li{
+		font-size:16px ;
+		padding-right: 36px;
+		float: left;
+		line-height: 66px;
+	}
+	.lgn ul li a{
+		color: #000000;
+	}
+	.lgpho .lgpho_left{
+		height: 365px;
+		background: url(./images/17.png) no-repeat 1290px 20px;
+	}
+	.lgpho .lgpho_left ul{
+		width: 224px;
+		height: 365px;
+		margin-left: 75px; 
+		float: left;
+	}
+	.lgpho .lgpho_left ul h3{
+		width: 222px;
+		background-color: #eeeeee;
+		line-height: 40px;
+	}
+	.lgpho .lgpho_left ul h4{
+		margin: 12px 0 12px 0;
+	}
+	.lgpho .lgpho_left ul li{
+		margin-bottom: 12px;
+	}
+	.lgpho .lgpho_left ul a{
+		color: black;
+	}
+	@keyframes keymove{
+	
+	0%{
+		background:url(./images/15.png) no-repeat;
+		background-size: 100% 100%;
+		}
+	
+	25%{
+		background:url(./images/101.png) no-repeat;
+		background-size: 100% 100%;
+	  	}
+	50%{
+	  	background:url(./images/102.png) no-repeat;
+	  background-size: 100% 100%;
+	  	}
+	75%{
+		background:url(./images/103.png) no-repeat;
+		background-size: 100% 100%;
+	   }
+	}
+	.lgpho .lgpho_left div:nth-child(2){
+		background:url(./images/15.png) no-repeat;
+		background-size: 100% 100%;
+		height: 360px;
+   	    width: 970px;
+    	float: left;
+    	animation: keymove 25s infinite;
+	}
+
+
+
+
+	.lgboom{
+		background: url(./images/22.png) no-repeat 1095px 3px;
+	}
+	.lgboom h3{
+		display: inline-block;
+    	width: 100px;
+    	padding: 20px 0 0 75px;
+	}
+	/*今日热门*/
+	.products{
+		width: 1200px;
+		height: 720px;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+	.products .pro_l{
+		overflow: hidden;
+	}
+	.products img{
+		float: left;
+    /*	border: none;*/
+	}
+	.products .pro_b{
+		height: 148px;
+		margin-top: 12px;
+		overflow: hidden;
+	}
+	.products .pro_b img{
+		margin-right: 13px;
+	}
+	.products .pro_b .last img{
+		margin-right: 0;
+	}
+	/*帮你选*/
+	.help{
+		height: 438px;
+		overflow: hidden;
+	}
+	.help .helpVoid{
+		height: 76px;
+	}
+	.help .helpVoid h3{
+		padding: 40px 0 0 75px;
+	}
+	.help .helpPhoto .help_1{
+	 	width:212px ;
+	 	height: 362px;
+	 	margin-left: 75px;
+	 	float: left;
+	 	background-color: #f7f7f7;
+	 }
+	  .help .helpPhoto .help_1 table td{
+	  	width: 100px;
+	  	height: 30px;
+	  	font-size: 14px;
+	  	text-align: center;
+	  }
+	  .help .helpPhoto .help_1 table th{
+	 	 width: 106px;
+	 	 height: 50px;
+	  	text-align: center;
+	  }
+	  .help .helpPhoto .help_1 table th a{
+	  	color: black;
+	  }
+	   .help .helpPhoto .help_1 table td a{
+	   	color: #6f7170;
+	   }
+	 .help .helpPhoto .help_2{
+	 	width: 290px;
+	 	height: 362px;
+	 	margin-left: 11px;
+	 	float: left;
+	 }
+	 .helpPhoto .help_2 a{
+	 	display: inline-block;
+	 	height: 120px;
+	 	width: 290px;
+	 	margin: 0px;
+	 	float: left;
+	 }
+	  .helpPhoto .help_3{
+	  	width: 449px;
+	  	float: left;
+	  	margin-left: 11px;
+	  	overflow: hidden;
+	  }
+	   .helpPhoto .help_3 img{
+	   	float: left;
+	   }
+	  .help3Top{
+	  	height: 40px;
+	  	background-color: #97c057;
+	  }
+	  .help3Top p{
+	  	text-align: center;
+	  	line-height: 40px;
+	  	color: #ffffff;
+	  }
+	  .help3Boom{
+	  	width: 449px;
+	  	float: left;
+	  }
+	  .help3Boom p{
+	  	width: 210px;
+	  	line-height: 86px;
+	  	float: left;
+	  	margin-left:10px; 
+	  	display: inline-block;
+	  }
+	   .help3Boom p a{
+	   	color:  #e51c14;
+	   }
+	  .helpPhoto .help_4{
+	  	width: 216px;
+	  	float:left;
+	  }
+	  .helpPhoto .help_4 p{
+	  	width:216px ;
+	  	text-align: center;
+	  	line-height: 40px;
+	  	margin-left:11px;
+	  	background-color: #8f82bc;
+	  	display: inline-block;
+	  }
+	  .helpPhoto .help_4 img{
+	  	margin-left: 11px;
+	  }
+	/*官网专属*/
+	.web{
+		height: 586px;
+	}
+	.webTop{
+		height: 76px; 
+	}
+	.web h3{
+		display: inline-block;
+    	width: 100px;
+    	padding: 40px 0 0 75px;
+    }
+    .web_4{
+    	width: 238px;
+    	height: 510px;
+    	margin-left: 75px;
+    	float: left;
+    }
+    .web_4 p{
+    	background-color:#92c0fa ;
+    	line-height:40px ;
+    	text-align: center;
+    }
+
+    .web_1{
+    	width: 464px;
+    	margin-left: 12px;
+    	float: left;
+    }
+    .web_1 p:first-child{
+    /*	width: ;*/
+    	background-color:#d9d042 ;
+    	text-align: center;
+    	line-height: 40px;
+    }
+     .web_1 .web_1_1{
+     	height: 212px;
+     	float: left;
+     }
+    .web_1 p:nth-child(4){
+    	 background-color:#f1b04f;
+    	text-align: center;
+    	line-height: 40px;
+    }
+    .web_2{
+    	width:476px ;
+    	height: 510px;
+    	margin-left: 12px;
+    	float: left;
+    }
+    .web_2 p{
+    	height:40px ;
+    	background-color:#c490bf ;
+    	text-align: center;
+    	line-height:40px ;
+    }
+     .web_2 img{
+     	float: left;
+     }
+	/*最新热帖*/
+	.hot{
+		height: 430px;
+		background: url(./images/68.png) no-repeat 75px 76px;
+	}
+    .hott{
+    	height: 76px; 
+    }
+	.hot h3{
+		display: inline-block;
+    	width: 100px;
+    	padding: 40px 0 0 75px;
+    }
+    .hot h3 a{
+    	color: black;
+    }
+    .hotTop{
+    	width: 899px;
+    	height: 182px;
+    	background-color:#f0f0f0;
+    	margin-left: 378px;
+    }
+    .hotBoom{
+    	width:1210px;
+    	height: 150px;
+    	margin-left: 75px; 
+    	margin-top: 15px;
+    }
+    .hotBoom a{
+    	width: 290px;
+    	height: 148px;
+    	margin-right:8px;
+    	display: inline-block;
+    }
+     .hotBoom img:nth-child(4){
+     	margin-right: 0;
+     }
+	footer{
+		height: 320px;
+		margin-top: 74px;
+	}
+	.zhang{
+		width:1349px;
+		float:left;
+		background-color:  #f6f6f6;
+	}
+
+	.zhang ul{
+		width: 1201px;
+		height: 84px;
+		margin-left: 74px;
+	}
+	.zhang ul li{
+		float: left;
+		line-height: 84px;
+		margin-right: 110px;
+	}
+	.zhang ul li a{
+		color:black;
+	}
+	.zhang ul img{
+    	float: left;
+    	margin-top: 25px;
+	}
+	.zhang ul li:last-child{
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+	.yu{
+		float: left;
+		margin-left: 75px;
+	}
+	.yu ul {
+		height: 142px;
+		float: left;
+		margin-right: 150px;
+		margin-top: 20px;
+	}
+	.yu ul:last-child{
+		margin-right: 0;
+	}
+	.yu ul li:first-child a{
+		font-size: 18px;
+		color: black;
+	}
+	.yu ul li a{
+		color:#997cb5;
+	}
+	.address{
+		width:1349px ;
+		height: 92px;
+		background-color: #f5f5f5;
+		clear: both;
+	}
+	.address ul li a{
+		color: #a571a5;
+	}
+	.address_Top{
+		width:1077px ;
+		height:23px ;
+		margin-left:187px ;
+		padding-top: 30px;
+	}
+	.address_Top li{
+		padding:0 10px 0 10px; 
+		line-height: 21px;
+		float: left;
+		font-size: 14px;
+		border-right: 1px solid #a571a5;
+	}
+	.address_boom ul li a{
+		color: #a571a5;
+	}
+	.address_boom{
+		width:1077px ;
+		height:23px ;
+		margin-left:178px ;
+		padding-top: 10px;
+	}
+	.address_boom li{
+		padding:0 10px 0 10px; 
+		line-height: 21px;
+		float: left;
+		font-size: 14px;
+		border-right: 1px solid #a571a5;
+	}
+
+
+
+
+	</style>
+</head>
+<body>
+<div class="four">
+	<nav>
+		<div class="navL">
+			<ul>
+				<li><a href="#">个人及家用</a></li>
+				<li><a href="#">商用</a></li>
+				<li><a href="#">企业级</a></li>
+				<li><a href="#">服务</a><img src="./images/06.png"></li>
+				<li><a href="#">具象会员专享</a></li>
+				<li><a href="#">社交品台</a><img src="./images/06.png"></li>
+				<li class="last"><a href="">手机版</a><img src="./images/06.png"></li>
+			</ul>
+		</div>
+		<div class="navR">
+			<ul>
+				<li><a href="">登录</a></li>
+				<li><a href="">注册</a></li>
+				<li class="last"><a href="">购物车</a></li>
+			</ul>
+		</div>
+	</nav>
+	<header>
+		<div class="lgsh">
+			<h3>联想商城</h3>
+			<!-- <input type="text" name=""> -->
+			<div>
+				<input type="text" name="">
+				<input type="submit" name="" value="搜索">
+			</div>
+		</div>
+		<div class="lgn">
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">爆款</a></li>
+				<li><a href="#">以旧换新</a></li>
+				<li><a href="#">游戏专区</a></li>
+				<li><a href="#">中小企业</a></li>
+				<li><a href="#">中小专属L码通道</a></li>
+				<li><a href="#">Lenove PC社区</a></li>
+				<li><a href="#">联想合伙人</a></li>
+			</ul>
+		</div>
+		<div class="lgpho">
+			<div class="lgpho_left">
+				<ul>
+					<h3><a href="#">Lenovo电脑分类</a></h3>
+					<h4><a href="#">笔记本</a></h4>
+					<li><a href="#">常规笔记本</a></li>
+					<li><a href="#">轻薄笔记本</a></li>
+					<li><a href="#">互联网爆款</a></li>
+					<li><a href="#">游戏本</a></li>
+					<li><a href="#">变形笔记本</a></li>
+					<h4><a href="#">台式机</a></h4>
+					<li><a href="#">一体机</a></li>
+					<li><a href="#">分体台式</a></li>
+				</ul>	
+				<div>
+					
+				</div>
+				<!-- <img src="./images/15.png"> -->
+			</div>
+		</div>
+		<div class="lgboom">
+			<h3>今日热门</h3>
+		</div>
+	</header>
+	<div class="products">
+		<div class="pro_l">
+			<a href="#"><img src="./images/25.png"></a>
+			<a href="#"><img src="./images/25.png"></a>
+			<a href="#"><img src="./images/26.png"></a>
+			<a href="#"><img src="./images/26.png"></a>
+			<a href="#"><img src="./images/26.png"></a>
+			<a href="#"><img src="./images/26.png"></a>
+		</div>
+		<div class="pro_b">
+			<a href="#"><img src="./images/36.png"></a>
+			<a href="#"><img src="./images/36.png"></a>
+			<a href="#"><img src="./images/36.png"></a>
+			<a href="#" class="last"><img src="./images/36.png"></a>
+		</div>
+	</div>
+	<div class="help">
+		<div class="helpVoid">
+			<h3>帮你选</h3>
+		</div>
+		<div class="helpPhoto">
+			<div class="help_1">
+				<table>
+					<tr>
+						<th><a href="#">笔记本</a></th>
+						<th><a href="#">台式机</a></th>
+					</tr>
+					<tr>
+						<td colspan="2">选择属于您的标签</td>
+					</tr>
+					<tr>
+						<td><a href="#">校园学生</a></td>
+						<td><a href="#">时尚女生</a></td>
+					</tr>
+						<tr>
+						<td><a href="#">家庭娱乐</a></td>
+						<td><a href="#">工作办公</a></td>
+					</tr>
+					<tr>
+						<td><a href="#">高清游戏</a></td>
+						<td><a href="#">轻薄便捷</a></td>
+					</tr>
+				</table>
+				<table>
+					<tr>
+						<th colspan="2">选择您的预算</th>
+					</tr>
+					<tr>
+						<td><a href="#">0-2999</a></td>
+						<td><a href="#">3000-3999</a></td>
+					</tr>
+					<tr>
+						<td><a href="#">4000-4999</a></td>
+						<td><a href="#">5000-6999</a></td>
+					</tr>
+					<tr>
+						<td><a href="#">7000-9999</a></td>
+						<td><a href="#">10000以上 </a></td>
+					</tr>
+				</table>
+			</div>
+			<div class="help_2">
+				<a href="#"><img src="./images/44.png"></a>
+				<a href="#"><img src="./images/50.png"></a>
+				<a href="#"><img src="./images/51.png"></a>
+			</div>
+			<div class="help_3">
+				<div class="help3Top">
+					<p>新品专区</p>
+				</div>
+				<img src="./images/47.png">
+				<div class="help3Boom">
+					<p><a href="#">快一望无边</a></p>
+					<p><a href="#">彪悍配置</a></p>
+				</div>
+			</div>
+			<div class="help_4">
+				<p><a href="#">新品试用</a></p>
+				<a href="#"><img src="./images/49.png"></a>
+			</div>
+		</div>
+	</div>
+	<div class="web">
+		<div class="webTop">
+			<h3>官方专属</h3>
+		</div>
+		<div class="web_4">
+			<p>火热促销</p>
+		</div>
+		<div class="web_1">
+			<p><a href="">专属延保</a></p>
+			<a href="#" class="web_1_1"><img src="./images/56.png"></a>
+			<a href="#" class="web_1_1"><img src="./images/57.png"></a>
+			<p><a href="#">以旧换新</a></p>
+			<a href="#" class="web_1_1"><img src="./images/62.png"></a>
+			<a href="#" class="web_1_1"><img src="./images/63.png"></a>
+		</div>
+		<div class="web_2">
+			<p><a href="">联想合伙人</a></p>
+			<a href="#"><img src="./images/59.png"></a>
+			<a href="#"><img src="./images/60.png"></a>
+			<a href="#"><img src="./images/64.png"></a>
+			<a href="#"><img src="./images/65.png"></a>
+		</div>
+	</div>
+	<div class="hot">
+		<div class="hott">
+			<h3><a href="#">最新热帖</a></h3>
+		</div>
+		<div class="hotTop">
+			<h3><a href="#"></a></h3>
+			<p><a href="#"></a></p>
+			<p><a href="#"></a></p>
+			<p><a href="#"></a></p>
+		</div>
+		<div class="hotBoom">
+			<a href="#"><img src="./images/71.png"></a>
+			<a href="#"><img src="./images/73.png"></a>
+			<a href="#"><img src="./images/75.png"></a>
+			<a href="#"><img src="./images/77.png"></a>
+		</div>
+	</div>
+	<footer>
+		<div class="zhang">
+		 	<ul>
+		 		<img src="./images/82.png">&nbsp;<li><a href="#">官方品质保证</a></li>
+		 		<img src="./images/82.png">&nbsp;<li><a href="#">1对1客户式服务</a></li>
+		 		<img src="./images/82.png">&nbsp;<li><a href="#">个性化定制服务</a></li>
+		 		<img src="./images/82.png">&nbsp;<li><a href="#">七天无理由退换货</a></li>
+		 		<img src="./images/82.png">&nbsp;<li><a href="#">新品抢先体验</a></li>
+		 	</ul>
+		</div>
+		<div class="yu">
+			<ul>
+				<li><a href="#">购物指南</a></li>
+				<li><a href="#">服务商信息</a></li>
+				<li><a href="#">购买流程</a></li>
+				<li><a href="#">注册登录</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">配送方式</a></li>
+				<li><a href="#">配送方式</a></li>
+				<li><a href="#">配送方式信息</a></li>
+				<li><a href="#">签收原则</a></li>
+				<li><a href="#">物流查询</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">支付方式</a></li>
+				<li><a href="#">支付方式</a></li>
+				<li><a href="#">支付问题</a></li>
+				<li><a href="#">分期支付</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">订单信息</a></li>
+				<li><a href="#">订单信息</a></li>
+				<li><a href="#">其他频道</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">售后服务</a></li>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+			</ul>
+			<ul>
+				<li><a href="#">其他说明</a></li>
+				<li><a href="3"></a></li>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+			</ul>
+		</div>
+		<div class="address">
+			<div class="address_Top">
+				<ul>
+					<li><a href="#">关于联想</a></li>
+					<li><a href="#">联系我们</a></li>
+					<li><a href="#">工作机会</a></li>
+					<li><a href="#">新闻中心</a></li>
+					<li><a href="#">巨响会会员专享</a></li>
+					<li><a href="#">联想社区</a></li>
+					<li><a href="#">nbd</a></li>
+					<li><a href="#">联想超融合</a></li>
+					<li><a href="#">联想热搜榜</a></li>
+					<li><a href="#">分类大全</a></li>
+					<li><a href="#">联想铲平大全</a></li>
+					<li><a href="#">智慧医疗</a></li>
+				</ul>
+			</div>
+
+			<div class="address_boom">
+					<ul>
+					<li><a href="#">关于联想</a></li>
+					<li><a href="#">联系我们</a></li>
+					<li><a href="#">工作机会</a></li>
+					<li><a href="#">新闻中心</a></li>
+					<li><a href="#">巨响会会员专享</a></li>
+					<li><a href="#">联想社区</a></li>
+					<li><a href="#"><img src="./images/104.png">销售网点</a></li>
+					<li><a href="#"><img src="./images/104.png">服务网点</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+	body,ul,li,p,h4{
+		margin: 0;
+		padding: 0;
+	}
+	header,ul,footer{
+		display: block;
+	}
+	a{
+		text-decoration: none;
+		color: #FFFEFE;
+	}
+	/*header部分*/
+	   /*父集元素*/
+	header{
+		background-color:#3C89CA; 
+		overflow: hidden;
+	}
+	    /*子集元素*/
+	header div.logo{
+		width: 173px;
+		height: 56px;
+		padding: 26px 0 0 176px;
+		background: url(./images/03.png) no-repeat 176px 26px;
+		float: left;
+	}
+	header div.search{
+		width: 612px;
+		float: right;
+	}
+	header div.search>div.searchTop{
+		text-align: center;
+		line-height: 52px;
+	}
+	header div.search>div.searchTop span a{
+		color: #010000;
+	}
+	header div.search>div.searchBoom ul li{
+		width: 109px;
+		line-height: 35px;
+		text-align: center;
+		border-left: 1px solid #337dc3;
+		list-style: none;
+		float: left; 
+		margin-top: 17px;
+		font-size: 12px;	
+	}
+	/*广告图片*/
+	div.ad{
+		width: 1350px;
+		height: 422px;
+		margin: 0 auto;
+		background: url(./images/06.png) no-repeat;
+	}
+	/*中间留白focus*/
+	div.focus{
+		width: 1350px;
+		margin: 0 auto;
+		height: 62px;
+		background: url(./images/09.png) no-repeat 1135px 21px;
+	}
+	/*产品区域products*/
+	div.products{
+		width: 1350px;
+		height: 300px;
+		margin: 0 auto;
+		/*background-color: #dd21df;*/
+	}
+	div.products .productsAll .product p a{
+		color: #9C9E9F;
+	}
+	div.products .productsAll .last p a{
+		color:  #9C9E9F;
+	}
+
+	div.products div.productsAll{
+		width: 1000px;
+		height: 150px;
+		margin-left:176px; 
+	}
+	div.products div.productsAll div{
+		height: 150px;
+		width: 320px;
+		float: left;
+		margin-right:20px;
+		text-align: center;
+	}
+	div.products div.productsAll div.last{
+		margin-right: 0px;
+	}
+	/*脚注部分footer*/
+	footer{
+		width: 1350px;
+		margin: 0 auto;
+		background-color: #3f8bcb;
+	}
+	footer div.footerAdd{
+		width: 1000px;
+		height: 176px;
+		margin-left: 175px;
+	}
+	footer ul{
+		margin-right:74px;
+		float: left;
+		color: #ffffff;
+	}
+	footer ul li{
+		list-style: none;
+		font-size: 12px;
+		/*li标签前加图片*/
+		/*list-style-image: url();*/
+	}
+	footer .footerAdd .ul_4{
+		margin-right:0px;
+	}
+	footer div.footerRight{
+		width: 520px;
+		float: right;
+	}
+	footer div.footerRight .footerRightTop{
+		height:88px; 
+		background: url(./images/22.png) no-repeat 408px 17px;
+	}
+	footer div.footerRight .footerRightBoom{
+		height: 88px;
+		font-size: 12px;
+		text-align: right;
+	}	
+	</style>
+</head>
+<body>
+	<header>
+		<div class="logo"></div>
+		<div class="search">
+			<div class="searchTop">
+				<input type="text" name="" value="">
+				<span><a href="#">search</a></span>
+			</div>
+			<div class="searchBoom">
+				<ul>
+					<li><a href="">企业风采</a></li>
+					<li><a href="">企业文化</a></li>
+					<li><a href="">企业招聘</a></li>
+					<li><a href="">联系我们</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="ad"></div>
+	<div class="focus">
+	</div>
+	<div class="products">
+		<div class="productsAll">
+			<div class="product">
+				<a href="#"><img src="./images/13.png"></a>
+			</div>
+			<div class="product">
+				<a href="#"><img src="./images/15.png"></a>
+			</div>
+			<div class="last">
+				<a href="#"><img src="./images/17.png"></a>
+			</div>
+		</div>
+		<div class="productsAll">
+			<div class="product">
+				<h3>美丽园区</h3>
+				<p><a href="#">公益建立</a></p>
+				<p><a href="#">你是我的你</a></p>
+			</div>
+			<div class="product">
+				<h3>美丽园区</h3>
+				<p><a href="#">公益建立</a></p>
+				<p><a href="#">你是我的你</a></p>
+			</div>
+			<div class="last">
+				<h3>美丽园区</h3>
+				<p><a href="#">公益建立</a></p>
+				<p><a href="#">你是我的你</a></p>
+		    </div>
+		</div>
+	</div>
+	<footer>
+		<div class="footerAdd">
+			<div>
+				<ul>
+					<h5>企业风采</h5>
+					<li><a href="#">美丽园区</a></li>
+					<li><a href="#">荣耀资质</a></li>
+					<li><a href="#">企业历程</a></li>
+					<li><a href="#">企业资源</a></li>
+					<li><a href="#">公益事业</a></li>
+				</ul>
+			</div>
+			<div>
+				<ul>
+					<h5>企业文化</h5>
+					<li><a href="#">公司新闻</a></li>
+					<li><a href="#">活动剪彩</a></li>
+					<li><a href="#">开心派对</a></li>
+				</ul>
+			</div>
+			<div>
+				<ul>
+					<h5>集团招聘</h5>
+					<li><a href="#">招聘信息</a></li>
+					<li><a href="#">学习成长</a></li>
+					<li><a href="#">职业通道</a></li>
+					<li><a href="#">薪酬福利</a></li>
+					<li><a href="#">办公环境</a></li>
+				</ul>
+			</div>
+			<div>
+				<ul class="ul_4">
+					<h5>联系我们</h5>
+					<li><a href="#">联系方式</a></li>
+					<li><a href="#">在线留言</a></li>
+					<li><a href="#">动态地图</a></li>
+				</ul>
+			</div>
+			<div class="footerRight">
+				<div class="footerRightTop">
+					
+				</div>
+				<div class="footerRightBoom">
+					<p>dgsfahdafhdfdfba</p>
+					<address>copydgadfhdfhdf</address>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
